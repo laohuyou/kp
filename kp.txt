@@ -1,0 +1,19 @@
+!取消自带vip规则
+|http://*.com$s@http://koolshare.b0.upaiyun.com/vip/*.js@@
+|https://v.qq.com$s@https://koolshare.b0.upaiyun.com/vip/*.js@@
+!视频vip规则
+!优酷
+|http://v.youku.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("fn-phone-see","player","35","92%");</script>@
+!芒果tv
+|http://www.mgtv.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("v-panel-count","mgtv-player-wrap","3");</script>@
+!腾讯视频,需要开启https
+|https://v.qq.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("action_title","mod_player","6");</script>@
+!爱奇艺
+|http://www.iqiyi.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("mod-play_tags","flashbox","7");</script>@
+!取消爱奇艺的自动播放。
+|http://www.iqiyi.com$s@QiyiPlayerLoader.ready@;@
+!乐视
+|http://www.le.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("interact_area","fla_box_con","15");</script>@
+!PPTV
+|http://vip.pptv.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("title_video","pptv_playpage","8");</script>@
+|http://v.pptv.com$s@</body>@</body><script type="text/javascript" charset="utf-8" src="https://secy001.ddns.to/luci-static/vip.js"></script><script>insVIP("play-comment","pptv_playpage_box","8");</script>@
